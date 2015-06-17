@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="projects">
+  <head>
+    <title>Tom Rishworth</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/scripts.js"></script>
+    <script src="//use.typekit.net/knw3tsy.js"></script><script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body ng-controller="projectsCtrl">
+    <div class="spacer"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar col-sm-3 col-md-3 col-lg-4">
+          <div class="avatar"><img src="/images/avatar.jpg"></div>
+          <div class="meta">
+            <h1 class="page-title">Tom Rishworth</h1>
+            <h2><a href="http://www.webscope.co.nz">Frontend Developer at Webscope</a></h2>
+            <div class="links">
+              <a href="http://www.twitter.com/tomrishworth"><i class="fa fa-twitter"></i></a>
+              <a href="mailto:tom@webscope.co.nz"><i class="fa fa-envelope"></i></a>
+              <a href="https://nz.linkedin.com/in/tomrishworth"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/tomrishworth"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 col-lg-8 col-lg-offset-4">
+          <h2>Recent Projects</h2>
+          <ul class="projects">
+            <li ng-repeat="project in projects" class="project">
+              <div class="project-image"><img src="{{project.imageurl}}"></div>
+              <div class="project-details">
+                <div class="project-link"><a href="{{project.websiteurl}}" class="btn btn-default">Visit site</a></div>
+                <h3>{{project.name}}</h3>
+                <p>{{project.description}}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
