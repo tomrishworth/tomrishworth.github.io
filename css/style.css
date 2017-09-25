@@ -1398,12 +1398,6 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 14px; }
 
-.project-2 .project-image {
-  background: -webkit-linear-gradient(#dfffda, #9cdb64);
-  background: linear-gradient(#dfffda, #9cdb64); }
-  .project-2 .project-image figcaption {
-    color: #558030; }
-
 .about-me {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #eee; }
